@@ -51,10 +51,12 @@
 			<br/>
 			Enjoy the site!
         </section>
+
+		<div id="nappycontainer" style="width:800px;height:600px;"></div>
 	<script>
       (async function () {
         await cheerpjInit();
-        cheerpjCreateDisplay(800, 600);
+        cheerpjCreateDisplay(800, 600, document.getElementById("nappycontainer"));
         await cheerpjRunJar("/app/nappybirdRun.jar");
       })();
     </script>
